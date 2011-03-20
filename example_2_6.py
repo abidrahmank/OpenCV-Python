@@ -7,9 +7,6 @@ Brought to you by Abid.K	--mail me at abidrahman2@gmail.com
 '''
 ########################################################################################
 import cv
-image=cv.LoadImage("test.jpg")
-cv.NamedWindow("input")
-cv.NamedWindow("output")
 
 def doCanny(image,lowThresh,highThresh,aperture):
 # 	i have changed code a little bit from text book. With example in text book, you have to load 		grayscale image. But now you can load any image, no matter if RGB or GRAYSCALE
@@ -25,6 +22,8 @@ def doCanny(image,lowThresh,highThresh,aperture):
 
 image=cv.LoadImage("test.jpg")
 #	some arbitrary values are given as parameters
+cv.NamedWindow("input")
+cv.NamedWindow("output")
 out=doCanny(image,100,200,3)
 cv.ShowImage("input",image)
 cv.ShowImage("output",out)
