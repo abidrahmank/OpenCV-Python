@@ -6,6 +6,7 @@ A simple OpenCV program that loads an image from disk and displays it on the scr
 
 import cv
 img=cv.LoadImage("test.jpg")
+# cv.LoadImage(image path,[flags)
 # To load image in grayscale,add a flag cv.CV_LOAD_IMAGE_GRAYSCALE in the bracket above
 cv.NamedWindow("Example1",cv.CV_WINDOW_AUTOSIZE)
 cv.ShowImage("Example1",img)
