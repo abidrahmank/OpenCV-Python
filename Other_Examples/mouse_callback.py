@@ -1,6 +1,6 @@
 ''' mouse_callback.py
 
-A simple example about generating mouse callback function. It is targeted on an absolute beginner.This program just print the coordinates when you double click at any point on the window.
+A simple example about generating mouse callback function. It is targeted on an absolute beginner.This program just print the coordinates in the terminal when you double click at any point on the window.
 
 Written by Abid.K	--mail me at abidrahman2@gmail.com
 
@@ -16,7 +16,7 @@ cv.NamedWindow("Display",cv.CV_WINDOW_AUTOSIZE)
 
 #	this is the method to define a mouse callback function. Several events are given in OpenCV documentation
 def my_mouse_callback(event,x,y,flags,param):
-	if event==cv.CV_EVENT_LBUTTONDBLCLK:	# here event is left mouse button double-clicked
+	if event==cv.CV_EVENT_LBUTTONDBLCLK:		# here event is left mouse button double-clicked
 		print x,y
 		
 		#text="{0},{1}".format(x,y)
@@ -32,3 +32,4 @@ cv.DestroyWindow("Display")
 
 ### Remove comment sign on lines 13,14,22,23 and run program. Much more interesting!!!!!!!
 ### If you are done with this code, next try example_4_1.py. It will give much more concepts... Thank you
+### Also read track_yellow_draw_line.py and then try pick_and_track.py
