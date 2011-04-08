@@ -54,3 +54,4 @@ while(1):
 	
 cv.DestroyWindow("Box Example")
 ###################################################################################################
+## Also refer to examples in the folder Other_examples/

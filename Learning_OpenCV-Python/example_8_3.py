@@ -36,8 +36,8 @@ nc=cv.FindContours(img_th,mem,cv.CV_RETR_LIST,cv.CV_CHAIN_APPROX_SIMPLE,(0,0))	#
 print len(nc)
 
 #	Drawing contours, external contact red color, and internal contours green color
-for c in nc:
-	cv.DrawContours(img_adth,nc,cv.CV_RGB(255,0,0),cv.CV_RGB(0,255,0),2,2,8) # change max_value, sixth flag and check output
+cv.DrawContours(img_adth,nc,cv.CV_RGB(255,0,0),cv.CV_RGB(0,255,0),2,2,8) # change max_value, sixth flag and check output
+
 
 cv.CvtColor(img,temp,cv.CV_GRAY2BGR)
 cv.Add(temp,img_adth,temp)
