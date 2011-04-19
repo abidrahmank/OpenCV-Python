@@ -1,0 +1,25 @@
+This guide take you through the path to use this folder. Below is the order you should check the programmes in this folder for easy understanding.
+
+1)mouse_callback.py
+	A simple tutorial on creating a mouse callback function intended for absolute beginner.
+
+	Next few programes deals with object tracking in an hierarchy. Do follow this order.
+2)track_yellow_draw_line.py
+	Tracks a yellow object in the screen, and draws a yellow line in its path.Simple. It works on simple principle of thresholding.
+
+3)pick_and_track.py
+	This is a combination of mouse_callback.py and track_yellow_draw_line.py. Here you can select the color of object you like by double clicking on it.
+
+4)single_color_multiple_points_track.py
+	This code tracks more than one yellow objects simultaneously. It introduces the idea of contours and bounding rectangles. 
+
+5)multi_color_multiple_points_track.py
+	This code tracks multiple objects in different colors,ie ,yellow,blue,and green here. 
+
+6)multi_color_two_object.py
+	Finally, this code also tracks two objects in two different colors,yellow and blue here. But it is different from multi_color_multiple_points_track.py in such a way that this code allow you to track two objects independently. You can draw two different lines which has no connection to each other. But in former, you only get a straight line connecting tracking points.
+
+ Output images of last three codes also given here,scmpt.png,multi_color.png,multi_track.png respectively.
+
+	Next code is about camera calibration. It is a slightly modified code of camera calibration example given in "Learning OpenCV" book. 
+7)camera_calibration.py
